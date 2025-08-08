@@ -58,6 +58,7 @@ class CMakeBuild(build_ext):
             "-DCMAKE_BUILD_TYPE={}".format(cfg),
             "-DMJX_BUILD_TESTS=OFF",
             "-DMJX_BUILD_PYTHON=ON",
+            "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         ]
         build_args = []
 
