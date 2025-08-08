@@ -15,7 +15,7 @@
 </p>
 
 ⚠️ Currently Mjx build is broken. Also, Mjx API will change in the near future.  
-Adding “-DCMAKE_POLICY_VERSION_MINIMUM=3.5” to cmake_arg in setup.py resolved compatibility issues that occurred with cmake 4.0 or later.  
+Adding “-DCMAKE_POLICY_VERSION_MINIMUM=3.5” to cmake_arg in setup.py resolved compatibility issues that occurred with cmake 4.0+.  
 It can be built with python 3.8 and python 3.9.  
 It failed with python 3.12, so there are still other issues.  
 
