@@ -16,7 +16,7 @@
 
 ⚠️ Currently Mjx build is broken. Also, Mjx API will change in the near future.  
 Adding “-DCMAKE_POLICY_VERSION_MINIMUM=3.5” to cmake_arg in setup.py resolved compatibility issues that occurred with cmake 4.0+.  
-It can be built with python 3.8 and python 3.9.  
+It can be built with python 3.8 3.9 3.10.  
 It failed with python 3.12, so there are still other issues.  
 
 # Mjx
@@ -42,7 +42,12 @@ Mjx works as a game server as [Mjai](https://github.com/gimite/mjai), a popular 
 ## Install
 
 ```
-$ pip install mjx
+$ sudo apt update
+$ sudo apt upgrade -y
+$ sudo apt install -y python3-pip build-essential ninja-build cmake pkg-config python3-dev protobuf-compiler libprotobuf-dev
+$ git clone https://github.com/IKEDAI1014/mjx.git --recursive
+$ cd mjx
+$ pip install .
 ```
 
 **Requirements.** Mjx supports `Python3.7` or later in `Linux` and `macOS Intel` (10.15 or later).
